@@ -1,5 +1,9 @@
 .page-section{
-    margin: 4.5rem 0;
+    margin: 2.2rem 0;
+
+    @mixin atSmall{
+        margin: 4.5rem 0;
+    }
 
 
     &__blue{
