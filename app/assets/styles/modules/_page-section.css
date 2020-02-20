@@ -1,8 +1,8 @@
 .page-section{
-    margin: 2.2rem 0;
+    padding: 2.2rem 0;
 
     @mixin atSmall{
-        margin: 4.5rem 0;
+        padding: 4.5rem 0;
     }
 
 

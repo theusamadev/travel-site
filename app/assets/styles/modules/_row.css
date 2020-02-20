@@ -24,6 +24,20 @@
 
     }
 
+    &__medium--6{
+
+
+        
+        @mixin atSmall{
+
+        float: left;
+        width: 50%;
+    }
+
+    }
+
+
+
     &-medium__8{
   
         @mixin atSmall{
@@ -46,13 +60,16 @@
     }
 
     &--gutter > div:not(:last-child){
-  
-
 
         @mixin atSmall{
             padding-right: 65px;
         }
     }
+    &--gutter-large > div:not(:last-child){
 
+        @mixin atSmall{
+            padding-right: 100px;
+        }
+    }
 
 }
