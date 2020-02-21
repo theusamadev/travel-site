@@ -72,4 +72,23 @@
         }
     }
 
+    &--gutter-small > div {
+
+        @mixin atSmall{
+            padding-right: 45px;
+        }
+    }
+
+    &--equal-height-at-medium{
+
+        @mixin atMedium{
+            display: flex;
+        }
+
+        & > div{
+            float: none;
+            display: flex;
+        }
+    }
+
 }
