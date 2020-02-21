@@ -1,0 +1,35 @@
+.navbar{
+
+    &__content{
+        display: none;
+
+
+
+        @mixin atMedium {
+            display: block;
+        }
+    }
+
+
+
+
+    display: flex;
+
+
+
+    ul{
+        list-style-type: none;
+        display: flex;
+        align-items: center
+    }
+    li {
+        text-decoration: none;
+    }
+
+    a{
+        color: white;
+        text-decoration: none;
+        margin-right: 1rem;
+        font-weight: 300;
+    }
+}

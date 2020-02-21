@@ -98,7 +98,8 @@
     &--gutter-small > div {
 
         @mixin atSmall{
-            padding-right: 45px;
+            padding-right: 18px;
+            padding-left: 18px;
         }
     }
 
