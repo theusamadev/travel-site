@@ -5,6 +5,12 @@
     margin-left: auto;
     margin-right: auto;
 
+
+    &--no-margin-until-large{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     &--medium{
         max-width: 976px;
 
