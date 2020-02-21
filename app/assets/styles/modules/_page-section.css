@@ -9,8 +9,8 @@
     &--testimonials{
 
 
-        @mixin atSmall{
-            background: url('/assets/images/testimonials-bg.jpg')top center no-repeat;
+        @mixin atLarge{
+            background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
             background-size: cover;
         }
     }

@@ -2,7 +2,9 @@
     background-color: rgba(255, 255, 255, .8);
     padding: 0 1.125rem 1px 1.125rem;
     margin-bottom: 98px;
-    @mixin atMedium{
+    background-color: #e0e6ef;
+
+    @mixin atLarge{
         padding: 0 1.8125rem 1px 1.8125rem;
         margin-bottom: 0;
     }
