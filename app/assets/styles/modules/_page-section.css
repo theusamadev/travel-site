@@ -7,12 +7,25 @@
 
 
     &--testimonials{
-        background: url('/assets/images/testimonials-bg.jpg')top center no-repeat;
-        background-size: cover;
+
+
+        @mixin atSmall{
+            background: url('/assets/images/testimonials-bg.jpg')top center no-repeat;
+            background-size: cover;
+        }
     }
 
     &__blue{
         background-color: $mainBlue;
         color: #fff;
+    }
+
+    &--no-padding-bottom{
+        padding-bottom: 0;
+
+
+        @mixin atSmall{
+            padding-bottom: 4.5rem;
+        }
     }
 }

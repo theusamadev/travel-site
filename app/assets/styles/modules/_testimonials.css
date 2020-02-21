@@ -1,6 +1,11 @@
 .testimonials{
     background-color: rgba(255, 255, 255, .8);
-    padding: 0 1.8125rem 1px 1.8125rem;
+    padding: 0 1.125rem 1px 1.125rem;
+    margin-bottom: 98px;
+    @mixin atMedium{
+        padding: 0 1.8125rem 1px 1.8125rem;
+        margin-bottom: 0;
+    }
 
 
     &__image{
@@ -34,6 +39,8 @@
     &__p-t-small{
         padding-top: 80px;
     }
-
+    &--no-m-bottom{
+        margin-bottom: 0;
+    }
 
 }
