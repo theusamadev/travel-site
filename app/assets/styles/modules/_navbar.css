@@ -3,9 +3,12 @@
     &__content{
         display: none;
 
-
-
         @mixin atMedium {
+            display: block;
+        }
+
+    
+        &--is-visible{
             display: block;
         }
     }
