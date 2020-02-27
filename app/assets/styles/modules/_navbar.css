@@ -1,38 +1,89 @@
 .navbar{
 
     &__content{
-        display: none;
+        opacity: 0;
+        z-index: -10;
+        transition: all .3s ease-out;
+        position: relative;
+        width: 100%;
 
         @mixin atMedium {
-            display: block;
+            opacity: 1;
+            transition: none;
+            width: auto;
         }
 
     
         &--is-visible{
-            display: block;
+            background-color: rgba(47, 85, 114, .55);
+            opacity: 1;
+            z-index: 2;
+            transform: scale(1);
+
         }
     }
 
 
 
 
-    display: flex;
+    /* display: flex; */
 
 
 
     ul{
         list-style-type: none;
         display: flex;
-        align-items: center
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 150px;
+
+
+        @mixin atMedium{
+            display: flex;
+            flex-wrap: nowrap;
+            margin-top: 1rem; 
+        }
+
     }
     li {
         text-decoration: none;
+        background-color: rgba(47, 85, 114, .55);
+        padding: 10px;
+        font-size: .8rem;
+        margin-right: .7rem;
+
+        @mixin atMedium{
+            /* padding: 0; */
+            font-size: 1rem;
+            background-color: transparent;
+        }
     }
 
     a{
         color: white;
         text-decoration: none;
-        margin-right: 1rem;
+        margin-right: 0;
         font-weight: 300;
+
+
+        @mixin atMedium{
+            margin-right: 1rem
+        }
     }
+
+    .nav__btn{
+        position: absolute;
+        top: 90px;
+        right: 50%;
+        transform: translateX(50%);
+
+        @mixin atMedium{
+            position: static;
+            transform: translate(0)
+        }
+    }
+
+
+
+    
 }
