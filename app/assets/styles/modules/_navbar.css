@@ -6,6 +6,7 @@
         transition: all .3s ease-out;
         position: relative;
         width: 100%;
+        z-index: 10;
 
         @mixin atMedium {
             opacity: 1;
@@ -67,7 +68,11 @@
 
 
         @mixin atMedium{
-            margin-right: 1rem
+            margin-right: 1rem;
+            
+            &.is-current-link{
+                color: #fabb69;
+            }
         }
     }
 
@@ -79,7 +84,10 @@
 
         @mixin atMedium{
             position: static;
-            transform: translate(0)
+            transform: translate(0);
+
+
+
         }
     }
 
