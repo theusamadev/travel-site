@@ -1,3 +1,4 @@
+import "lazysizes"
 import MobileMenu from './modules/MobileMenu'
 import RevealOnScroll from './modules/revealOnScroll'
 import StickyHeader from './modules/StickyHeader'
