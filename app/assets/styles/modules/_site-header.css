@@ -39,13 +39,14 @@
         @mixin atSmall{
         left: 0;
         transform: translateX(0);
+        position: absolute;
+        top: 0;
         padding: 25px 36px;
 
 
         .site-header--dark  &  {
-            position: absolute;
-            top: -20px;
-            transform: scale(.64);
+            /* top: -20px; */
+            transform: scale(.64) translateY(-30px);
         }
 
         }
